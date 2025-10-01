@@ -6,54 +6,86 @@
     <title>Portfolio - Technical Designer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #181a20;
+            color: #e4e6eb;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #232526 0%, #414345 100%);
             color: #fff;
-            padding: 20px 0;
+            padding: 32px 0 24px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
         }
         .container {
             max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 32px auto;
+            padding: 0 24px;
         }
         section {
-            margin-bottom: 40px;
+            margin-bottom: 48px;
+            background: #23272f;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+            padding: 32px;
         }
         h2 {
-            color: #333;
-            margin-bottom: 10px;
+            color: #ffb347;
+            margin-bottom: 16px;
+            font-size: 2rem;
+        }
+        h3 {
+            color: #ffd700;
+            margin-bottom: 8px;
+        }
+        ul {
+            margin-left: 24px;
         }
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 24px;
         }
         .project-item {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #282c34;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .project-item h3 {
-            margin-top: 0;
+        .project-item:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(255, 179, 71, 0.15);
         }
-        .contact-info {
-            background-color: #333;
+        .project-item h3 a {
+            color: #ffb347;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .project-item h3 a:hover {
+            color: #ffd700;
+        }
+        .contact-info, footer.contact-info {
+            background: #232526;
             color: #fff;
-            padding: 20px;
+            padding: 24px;
             text-align: center;
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
         }
         .contact-info a {
-            color: #fff;
-            text-decoration: none;
+            color: #ffb347;
+            text-decoration: underline;
+        }
+        .contact-info a:hover {
+            color: #ffd700;
         }
     </style>
 </head>
@@ -67,7 +99,34 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I am a Technical Designer passionate about creating video games. I specialize in designing game mechanics and optimizing production processes. I have experience working with engines like Unity and Unreal Engine.</p>
+        <p>Hello! I am a Technical Designer passionate about creating video games.<br>
+            As a Senior Technical Designer I am involved in almost every step of game production. From game design on the paper to implementation of ideas created to engine itself. During that process I need to cooperate with every department like programmers, level designers, artists, animators, sound.
+        </p>
+        <h3>Current responsibilities:</h3>
+        <ul>
+            <li>Scripting.</li>
+            <li>Design.</li>
+            <li>Documentation.</li>
+            <li>Behaviour of NPC.</li>
+            <li>Simple scripts in C#.</li>
+            <li>Getting new skills in Python for simple scripts.</li>
+            <li>Providing critical and constructive feedback for Level/Quest designers about their scripting.</li>
+            <li>Providing new LDI, including their design and implementation.</li>
+            <li>Mentoring juniors to develop their skills as fast as possible</li>
+            <li>Conceptualizing and evaluating game design ideas with others.</li>
+            <li>Working with artists, programmers, animators, audio engineers, and other designers to drive the quality and vision of the game while ensuring deliverable dates are met.</li>
+            <li>Tweaking behavior, player abilities, and other gameplay elements to shape and define the core experience.</li>
+        </ul>
+        <h3>Known game engines (and projects created):</h3>
+        <ul>
+            <li>Ubisoft Annecy - Snowdrop (Star Wars: Outlaws), Anvil (Riders Republic, Steep).</li>
+            <li>Flying Wild Hog - Road Hog engine (Shadow Warrior 2).</li>
+            <li>CryEngine 3, CryEngine 2 (Enemy Front, Sniper: Ghost Warrior 2).</li>
+            <li>ChromeEd 4, ChromeEd 2 (Sniper: Ghost Warrior).</li>
+            <li>UDK (Alien Rage)</li>
+            <li>JupiterEX (Budget PC Shooters)</li>
+        </ul>
+        <p>In my free time, having fun with Unreal 5.</p>
     </section>
 
     <section id="projects">
@@ -98,13 +157,14 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you want to get in touch, email me at: <a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
+        <p>If you want to get in touch, email me at: <a href="mailto:laptopfus@gmail.com">laptopfus@gmail.com</a></p>
+        <p>You can also find me on LinkedIn: <a href="https://www.linkedin.com/in/laptopfus/">laptopfus</a></p>
     </section>
 
 </div>
 
 <footer class="contact-info">
-    <p>&copy; 2024 Portfolio - Technical Designer | All rights reserved.</p>
+    <p>&copy; 2025 Portfolio - Senior Technical Designer | All rights reserved.</p>
 </footer>
 
 </body>
